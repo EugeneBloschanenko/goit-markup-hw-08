@@ -1,0 +1,30 @@
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+
+    .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 170px;
+            height: 92px;
+            border: solid 1px var(--icon-clients-section-color);
+            border-radius: 4px;
+            color: var(--icon-clients-section-color);
+            transition: color var(--translate-options), border var(--translate-options);
+        }
+
+    .icon {
+            fill: currentColor;
+        }
+
+    .link:hover,
+    .link:focus {
+            color: var(--icon-main-hover-color);
+            border: solid 1px var(--icon-main-hover-color);
+        }
+    
+}
+
+
+

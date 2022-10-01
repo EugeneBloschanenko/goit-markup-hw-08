@@ -1,0 +1,124 @@
+.page-header {
+    /* padding: 24px 0px; */
+    border-bottom: solid 1px var(--header-border-color);
+
+    &__flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+}
+
+
+
+.logo {
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    &_blue {
+            color: var(--primary-logo-color);
+        }
+    
+    &_black {
+            color: var(--secondary-logo-color);
+        }
+    
+    &_white {
+            color: var(--secondary-logo-color-footer);
+        }
+}
+
+
+.site-nav {
+    display: flex;
+    margin-left: 90px;
+
+    &__item:not(:first-child) {
+            margin-left: 50px;
+        }
+}
+
+
+.site-nav {
+    &__link {
+            color: var(--primary-text-color);
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            transition: color var(--translate-options);
+            position: relative;
+            padding: 32px 0;
+        }
+
+    &__link:hover,
+    &__link:focus {
+            color: var(--hover-focus-color);
+        }
+    
+    &__link_studio_current {
+            color: var(--hover-focus-color);
+        }
+
+    &__link_studio_current::after {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background-color: var(--accent-color);
+            border-radius: 4px;
+            bottom: 0;
+            left: 0;
+        }
+
+    &__link_portfolio_current {
+            color: var(--hover-focus-color);
+        }
+    
+    &__link_portfolio_current::after {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background-color: var(--accent-color);
+            border-radius: 4px;
+            bottom: 0;
+            left: 0;
+        }
+}
+
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+
+    &__link {
+            display: flex;
+            align-items: center;
+            color: var(--secondary-text-color);
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            transition: color var(--translate-options);
+            position: relative;
+            padding: 32px 0;
+        }
+
+    &__link:hover,
+    &__link:focus {
+            color: var(--hover-focus-color);
+        }
+    
+    &__icon {
+            margin-right: 10px;
+            fill: currentColor;
+        }
+
+    &__item:not(:first-child) {
+            margin-left: 50px;
+        }
+}
