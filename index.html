@@ -16,7 +16,7 @@
 
 <body>
   <header class="page-header">
-    <div class="container page-header__flex">
+    <div class="container page-header__flex page-header__mobile">
       <a class="logo" href="./index.html"><span class="logo_blue">Web</span><span class="logo_black">Studio</span>
       </a>
       <nav>
@@ -32,6 +32,13 @@
           </li>
         </ul>
       </nav>
+      <button type="button" class="open-mobile-menu-btn">
+        <svg width="24" height="16">
+          <use href="./images/sprite/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+
 
       <ul class="contacts list">
         <li class="contacts__item">
@@ -46,19 +53,56 @@
         </li>
       </ul>
     </div>
+
+    <div class="mobile-menu">
+      <div class="container">
+        <nav>
+          <ul class="menu-nav list">
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href=""><span class="menu-nav__link_studio_current">Студия</span></a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="menu-contacts list">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+        <ul class="menu-social-networks list">
+          <li class="menu-social-networks__item"><a href="" class="menu-social-networks__link">Instagram</a></li>
+          <li class="menu-social-networks__item"><a href="" class="menu-social-networks__link">Twitter</a></li>
+          <li class="menu-social-networks__item"><a href="" class="menu-social-networks__link">Facebook</a></li>
+          <li class="menu-social-networks__item"><a href="" class="menu-social-networks__link">LinkedIn</a></li>
+        </ul>
+        <button type="button" class="mobile-menu__close-btn">
+          <svg class="mobile-menu__close-icon">
+            <use href="./images/sprite/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
     <!-- hero -->
-    <section class="hero-section hero-bg-image">
+    <!-- <section class="hero-section">
       <div class="container">
         <h1 class="hero-section__title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-section__button" type="button" data-modal-open>Заказать услугу</button>
       </div>
-    </section>
+    </section> -->
 
     <!-- benefits -->
-    <section class="benefits section">
+    <!-- <section class="benefits section">
       <div class="container">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="benefits__list list">
@@ -104,10 +148,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- about -->
-    <section class="about section">
+    <!-- <section class="about section">
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="about__list list">
@@ -133,10 +177,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- team -->
-    <section class="team section">
+    <!-- <section class="team section">
       <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-list list">
@@ -263,10 +307,10 @@
           </div>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- clients -->
-    <section class="clients section">
+    <!-- <section class="clients section">
       <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
         <ul class="clients-list list">
@@ -302,11 +346,11 @@
             </a></li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <!-- footer -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container wrapper">
       <div class="address-block">
         <a class="logo" href="./index.html"><span class="logo_blue">Web</span><span class="logo_white">Studio</span></a>
@@ -368,10 +412,10 @@
       </li>
       </ul>
     </div>
-  </footer>
+  </footer> -->
 
   <!-- backdrop -->
-  <div class="backdrop is-hidden" data-modal>
+  <!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button type="button" class="modal-close-btn" data-modal-close>
         <svg class="modal-close-icon" width="18" height="18">
@@ -430,7 +474,7 @@
       </form>
     </div>
   </div>
-  <script src="./JS/modal.js"></script>
+  <script src="./JS/modal.js"></script> -->
 </body>
 
 </html>
