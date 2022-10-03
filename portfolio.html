@@ -34,6 +34,12 @@
         </ul>
       </nav>
 
+      <button type="button" class="open-mobile-menu-btn" data-menu-open>
+        <svg width="24" height="16">
+          <use href="./images/sprite/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+
       <ul class="contacts list">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
@@ -47,15 +53,54 @@
         </li>
       </ul>
     </div>
+
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <nav>
+          <ul class="menu-nav list">
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="./index.html">Студия</span></a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="./portfolio.html"><span
+                  class="menu-nav__link_portfolio_current">Портфолио</span>
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a class="menu-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="menu-contacts list">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link menu-contacts__link_accent" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="menu-social-networks list">
+          <li class="menu-social-networks__item"><a href="" class="menu-social-networks__link">Instagram</a></li>
+          <li class="menu-social-networks__item"><a href="" class="menu-social-networks__link">Twitter</a></li>
+          <li class="menu-social-networks__item"><a href="" class="menu-social-networks__link">Facebook</a></li>
+          <li class="menu-social-networks__item"><a href="" class="menu-social-networks__link">LinkedIn</a></li>
+        </ul>
+        <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="19" height="19">
+            <use href="./images/sprite/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="portfolio section">
+    <!-- <section class="portfolio section">
       <div class="container">
-        <h1 class="visually-hidden">Наши работы</h1>
+        <h1 class="visually-hidden">Наши работы</h1> -->
 
-        <!-- Portfolio filter -->
-        <ul class="filter-list list">
+    <!-- Portfolio filter -->
+    <!-- <ul class="filter-list list">
           <li class="item">
             <button class="button" type="button">Все</button>
           </li>
@@ -71,10 +116,10 @@
           <li class="item">
             <button class="button" type="button">Маркетинг</button>
           </li>
-        </ul>
+        </ul> -->
 
-        <!-- Portfolio -->
-        <ul class="portfolio-list list">
+    <!-- Portfolio -->
+    <!-- <ul class="portfolio-list list">
           <li class="item">
             <a class="link" href="">
               <div class="portfolio-list-wrapper">
@@ -195,10 +240,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container wrapper">
       <div class="address-block">
         <a class="logo" href="./index.html"><span class="logo_blue">Web</span><span class="logo_white">Studio</span></a>
@@ -260,7 +305,8 @@
       </li>
       </ul>
     </div>
-  </footer>
+  </footer> -->
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
