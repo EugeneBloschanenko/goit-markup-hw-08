@@ -1,7 +1,10 @@
+
+// mobile filter
 .filter-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
+    gap: 15px;
 
     .button {
             border: none;
@@ -32,12 +35,9 @@
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
 
     .item {
-            width: calc((100% - 60px) / 3);
-            margin-right: 30px;
             margin-bottom: 30px;
             border: 1px solid var(--portfolio-border-color);
         }
@@ -61,11 +61,12 @@
             color: var(--portfolio-overlay-text-color);
             font-size: 18px;
             line-height: 1.56;
-            /* overflow: auto; */
         }
     
     .link {
             display: block;
+            width: 100%;
+            height: 404px;
             transition: box-shadow var(--translate-options);
         }
 
@@ -116,7 +117,163 @@
 }
 
 
+// tablet filter
+@media screen and (min-width: 768px) {
+    .filter-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+}
+    .portfolio-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+        .item {
+            width: calc((100% - 60px) / 2);
+            margin-bottom: 0;
+            margin-right: 0;
+            
+    }
+}
+}
+
+
+// desktop filter
+@media screen and (min-width: 1200px) {
+.portfolio-list {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        flex-wrap: wrap;
+        gap: 0;
+
+        .item {
+            width: calc((100% - 60px) / 3);
+            margin-right: 30px;
+            margin-bottom: 30px;
+        
+        }
+}
+}
 
 
 
 
+// .filter-list {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 50px;
+
+//     .button {
+//         border: none;
+//         border-radius: 4px;
+//         min-width: 73px;
+//         padding: 6px 22px;
+
+//         cursor: pointer;
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 1.63;
+//         text-align: center;
+//         transition: color var(--translate-options),
+//             background-color var(--translate-options),
+//             box-shadow var(--translate-options);
+//     }
+
+//     .item:not(:last-child) {
+//         margin-right: 8px;
+//     }
+
+//     .button:hover,
+//     .button:focus {
+//         color: var(--filter-hover-focus-text-color);
+//         background-color: var(--filter-hover-focus-bg-color);
+//         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+//     }
+// }
+
+// .portfolio-list {
+//     display: flex;
+//     flex-wrap: wrap;
+
+//     .item {
+//         width: calc((100% - 60px) / 3);
+//         margin-right: 30px;
+//         margin-bottom: 30px;
+//         border: 1px solid var(--portfolio-border-color);
+//     }
+
+//     &-wrapper {
+//         position: relative;
+//         overflow: hidden;
+//     }
+
+//     &-wrapper .overlay {
+//         padding: 63px 24px;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-color: rgba(33, 150, 243, 0.9);
+//         transform: translateY(101%);
+//         transition: transform var(--translate-options);
+
+//         color: var(--portfolio-overlay-text-color);
+//         font-size: 18px;
+//         line-height: 1.56;
+//     }
+
+//     .link {
+//         display: block;
+//         transition: box-shadow var(--translate-options);
+//     }
+
+//     .link:hover,
+//     .link:focus {
+//         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+//     }
+
+//     .link:hover .overlay,
+//     .link:focus .overlay {
+//         transform: translateY(0%);
+//     }
+
+//     .photo {
+//         display: block;
+//         max-width: 100%;
+//         height: auto;
+//     }
+
+//     .item:nth-child(3n) {
+//         margin-right: 0;
+//     }
+
+//     .item:nth-last-child(-n + 3) {
+//         margin-bottom: 0;
+//     }
+
+//     .title {
+//         padding: 20px 24px 4px 24px;
+
+//         color: var(--primary-text-color);
+//         font-weight: 700;
+//         font-size: 18px;
+//         line-height: 2;
+//     }
+
+//     .description {
+//         padding: 0 24px 20px 24px;
+
+//         color: var(--secondary-text-color);
+//         font-size: 16px;
+//         line-height: 1.88;
+//     }
+
+//     a {
+//         text-decoration: none;
+//     }
+// }
