@@ -1,16 +1,28 @@
-.about {
-    padding-top: 0;
 
-    &__list {
+// mobile-tablet about
+
+@media screen and (max-width: 1199px) {
+.about {
+    display: none;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+.about {
+        display: block;
+        padding-top: 0;
+
+        &__list {
             display: flex;
             justify-content: space-between;
         }
-    
-    &__wrapper {
+
+        &__wrapper {
             position: relative;
         }
-    
-    &__description {
+
+        &__description {
             position: absolute;
             bottom: 2px;
             left: 0;
@@ -26,5 +38,7 @@
             background-color: var(--about-description-bg);
             color: var(--about-description-color);
         }
+    }
 }
+
 
