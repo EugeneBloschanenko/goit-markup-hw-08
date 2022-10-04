@@ -351,6 +351,11 @@ p {
   pointer-events: none;
   transition: opacity var(--translate-options), visibility var(--translate-options);
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 .mobile-menu.is-open {
   opacity: 1;
@@ -382,14 +387,10 @@ p {
   padding-left: 25px;
   margin-bottom: 302px;
 }
-.menu-nav__item {
-  display: block;
-}
 .menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .menu-nav__link {
-  display: block;
   color: var(--primary-text-color);
   text-decoration: none;
   font-size: 40px;
@@ -406,12 +407,14 @@ p {
 }
 
 .menu-contacts {
-  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   padding-left: 25px;
   margin-bottom: 64px;
 }
 .menu-contacts__link {
-  display: block;
+  display: flex;
   color: var(--secondary-text-color);
   text-decoration: none;
   font-size: 24px;
@@ -419,10 +422,20 @@ p {
   line-height: 1.172;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .menu-contacts__link {
+    font-size: 24px;
+  }
+}
 .menu-contacts__link_accent {
   color: var(--accent-color);
   font-size: 34px;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .menu-contacts__link_accent {
+    font-size: 28px;
+  }
 }
 
 .menu-social-networks {
@@ -431,12 +444,23 @@ p {
   gap: 20px;
   padding-left: 25px;
 }
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .menu-social-networks {
+    gap: 5px;
+    padding-left: 5px;
+  }
+}
 
 .menu-social-networks__link {
   text-decoration: none;
   font-size: 18px;
   line-height: 1.222;
   color: var(--accent-color);
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .menu-social-networks__link {
+    font-size: 14px;
+  }
 }
 
 .menu-social-networks__item:not(:last-child) {
@@ -727,7 +751,7 @@ p {
 }
 @media screen and (max-width: 1199px) {
   .hero-section {
-    max-width: 768px;
+    max-width: 1600px;
     max-height: 400px;
     padding: 118px 0;
   }
@@ -1392,7 +1416,7 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .tablet-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
   .mailing-block-label .mailing-block-input {
